@@ -29,6 +29,11 @@ export default {
   components: {
     Logo,
   },
+  asyncData({ app }) {
+    app.$shopify.product.fetchAll().then(products => {
+      console.log(products)
+    })
+  },
 }
 </script>
 
