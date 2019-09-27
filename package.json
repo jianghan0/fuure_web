@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.7",
+    "eslint": "^6.4.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
