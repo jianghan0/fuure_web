@@ -7,11 +7,7 @@
       </h1>
       <h2 class="subtitle" />
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
         <a
@@ -31,8 +27,8 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
-  }
+    Logo,
+  },
 }
 </script>
 
