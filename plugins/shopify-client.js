@@ -3,8 +3,8 @@ import fetch from 'node-fetch'
 
 const shopify = Client.buildClient(
   {
-    domain: process.env.NUXT_ENV_STORE_URL,
-    storefrontAccessToken: process.env.NUXT_ENV_STORE_FRONT_ACCESS_TOKEN,
+    domain: process.env.STORE_URL,
+    storefrontAccessToken: process.env.STORE_FRONT_ACCESS_TOKEN,
   },
   fetch
 )
