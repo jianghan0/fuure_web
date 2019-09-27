@@ -27,9 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '@/plugins/shopify-client'
-  ],
+  plugins: ['@/plugins/shopify-client'],
   /*
    ** Nuxt.js dev-modules
    */
