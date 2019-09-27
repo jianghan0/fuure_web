@@ -9,15 +9,24 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "lintfix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.7",
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
-    "nuxt": "^2.0.0"
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "nuxt": "^2.0.0",
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.2.10",
-    "@nuxtjs/eslint-config-typescript": "^0.1.3"
+    "@nuxtjs/eslint-config-typescript": "^0.1.3",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }
