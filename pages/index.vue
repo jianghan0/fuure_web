@@ -7,7 +7,7 @@
       </h1>
       <ul>
         <li v-for="product in products" :key="product.id">
-          {{ product.title }}
+          <h2>{{ product.title }}</h2>
           <img :src="product.images[0].src" alt="product.images[0].altText" />
         </li>
       </ul>
