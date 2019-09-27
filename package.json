@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.7",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "shopify-buy": "^2.7.2"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.2.10",
