@@ -5,19 +5,12 @@
       <h1 class="title">
         fuure_web
       </h1>
-      <h2 class="subtitle" />
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <ul>
+        <li v-for="product in products" :key="product.id">
+          {{ product.title }}
+          <img :src="product.images[0].src" alt="product.images[0].altText" />
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -29,10 +22,9 @@ export default {
   components: {
     Logo,
   },
-  asyncData({ app }) {
-    app.$shopify.product.fetchAll().then(products => {
-      console.log(products)
-    })
+  async asyncData({ app }) {
+    const products = await app.$shopify.product.fetchAll()
+    return { products }
   },
 }
 </script>
