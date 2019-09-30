@@ -37,7 +37,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/dotenv'],
+  modules: ['@nuxtjs/dotenv', '@nuxtjs/style-resources'],
+  /**
+   * Style resources
+   */
+  styleResources: {
+    scss: ['~/assets/scss/variables.scss'],
+  },
   /*
    ** Build configuration
    */
@@ -46,7 +52,7 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
-      if (ctx.isDev) {
+      if (ctx.isDev && process.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(ts|js|vue)$/,
