@@ -16,7 +16,7 @@
     "@nuxt/typescript-runtime": "^0.1.7",
     "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/dotenv": "^1.4.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "nuxt": "^2.0.0",
     "shopify-buy": "^2.7.2"
   },
